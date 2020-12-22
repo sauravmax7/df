@@ -1,0 +1,16 @@
+.addnews {
+  color: black;
+  background-color: rgb(192, 191, 191);
+  width: 75%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.submit-form {
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.reporter-newsadd {
+  height: 900px;
+}

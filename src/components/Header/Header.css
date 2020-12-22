@@ -1,0 +1,51 @@
+.header-wrapper {
+  top: 0;
+  width: 100%;
+}
+.top-bar {
+  background: rgb(71, 71, 71);;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.top-bar p {
+  text-align: center;
+}
+
+.login {
+  padding-right: 3vw;
+}
+.signup {
+  padding-right: 3vw;
+}
+
+.top-bar a.login-btn,
+.top-bar a.signup-btn {
+  color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none !important;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  header {
+    top: 0;
+    width: 100%;
+    margin-right: 0vw;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+  header {
+    top: 0;
+    width: 100%;
+    margin-right: 0vw;
+  }
+}

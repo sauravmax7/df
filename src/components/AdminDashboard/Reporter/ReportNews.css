@@ -1,0 +1,54 @@
+.outerWrapper {
+	width: 50%;
+	margin: 0 auto;
+	background-color: #ffffff;
+	padding: 10px;
+}
+.com {
+	margin-top: 10px;
+}
+
+.category {
+	background-color: black;
+	color: #ffffff;
+	margin-left: 2%;
+}
+
+.title {
+	font: bold 1.6rem Arial;
+	text-transform: capitalize;
+}
+
+.description {
+	font: italic 0.9rem Arial;
+}
+.author-date {
+	font: 20px 0.9rem Arial;
+}
+
+.newsImage img {
+	height: auto;
+	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	.outerWrapper {
+		width: 100%;
+	}
+}
+
+.shareAndReportButton {
+	float: right;
+	margin: 1%;
+	color: black;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+}
+
+.shareAndReportButton:hover {
+	background-color: lightgrey;
+	color: black;
+}

@@ -1,0 +1,37 @@
+.news {
+  /* padding-left: 20px; */
+  padding-top: 50px;
+}
+
+.list-group-item {
+  background-color: blanchedalmond;
+}
+
+.cards {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.main {
+  display: flex;
+}
+
+.mynews-wrapper{
+  height: 500px;
+}
+
+.image1 {
+  height: 150px;
+}
+.full-card {
+  margin-left: 35%;
+}
+
+@media only screen and (max-width: 768px) {
+  .full-card {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+}

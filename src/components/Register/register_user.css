@@ -1,0 +1,80 @@
+.register-wrapper {
+  background-image: url("../../assests/registerUserBackground.jpg");
+  background-color: #303952;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2%;
+}
+
+.register-wrapper label {
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  margin: 0px 0px;
+  font-size: 1em;
+}
+
+.register-wrapper .form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1.2px solid rgb(231, 231, 231);
+  border-spacing: 0;
+  font-weight: bold;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.register-wrapper .form-control:focus {
+  border-bottom: 2px solid rgb(55, 142, 240) !important;
+}
+
+.register-wrapper small {
+  font-size: xx-small;
+  color: grey;
+}
+.signUpForm {
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 57%;
+  background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .signUpForm {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+  .register-wrapper {
+    background: none;
+    padding: 0;
+  }
+}
+
+.register-wrapper .error {
+  color: red;
+}
+
+.register-wrapper .eyeSpan {
+  float: right;
+  margin-right: 6px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 2;
+}
+
+.register-wrapper .btn {
+  background-color: #0d66d0;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  float: right;
+  box-shadow: none !important;
+}
+
+.register-wrapper .btn:active {
+  border: none;
+  outline: none;
+}
