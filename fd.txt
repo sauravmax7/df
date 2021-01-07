@@ -1,3 +1,33 @@
+
+#include <iostream>
+
+using namespace std;
+
+class listClass 
+{ 
+    
+    // Data Members 
+    int count=0;
+    int size = 0;
+    double* list=new double[size];
+  
+    
+    // Access specifier 
+    public: 
+    //defualt constructor
+    listClass(){
+        count=0;
+        size=30;
+    }
+  
+    // Member Functions() 
+    
+    void addValue(int m) 
+    { 
+        //add value to array only if its not full
+        //count is increased only if value is inserted to array 
+        if (count<size){
+          list[count]=m;
           count++;
         }
         //else print array is full
