@@ -1,0 +1,66 @@
+public class Main
+{
+    public static class Creature{
+        private String name;
+        private int power;
+        
+        public Creature(String s){
+            name=s;
+            power=10;
+        }
+        
+        // split method
+        public Creature split(){
+            //assign calling objects name to local variable str
+            String str = name;
+            //check if str is null and if so then return empty String if not null then
+            //remove last Character from str
+            if (str != null && str.length() > 0) {
+                //use substring method to remove last Character
+                str = str.substring(0, str.length() - 1);
+            }
+            else{
+                str="";
+            }
+            //Create new Creature object and pass name str to its constructor
+            Creature n= new Creature(str);
+            //reduce power by 2
+            n.power=power-2;
+            //return new Creature object
+            return n;
+        }
+        
+        //absorb method
+        public void absorb(Creature c){
+            //increase power of calling object 
+            power=power+(c.power/2);
+            //decrease power of paramater object
+            c.power-=c.power/2;
+        }
+        
+        public String getName(){
+            return name;
+        }
+        
+        public int getPower(){
+            return power;
+        }
+    }
+	public static void main(String[] args) {
+		Creature c1= new Creature("Noah");
+        System.out.println(c1.getPower());
+        
+	    Creature c2=c1.split();
+        System.out.println(c2.getName());
+	    System.out.println(c2.getPower());
+	    
+	    Creature c3=c2.split();
+        System.out.println(c3.getName());
+	    System.out.println(c3.getPower());
+	
+    	Creature c4= new Creature("Victim");
+    	c1.absorb(c4);
+    	System.out.println(c1.getPower());
+	    System.out.println(c4.getPower());
+	}
+}
