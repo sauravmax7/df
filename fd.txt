@@ -1,18 +1,68 @@
-<?php
-// Your code here!
-$a1=array("ahmad"=>50,"karam"=>70);
 
-$a2=array("salma"=>80,"rana"=>90);
 
-//assign arr1 to myArr
-$a3 = $a1;
-//run for loop and add key value to myArr of arr2
-    foreach ($a2 as $key=>$value) {
-        $a3[$key] = $value;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    // declare a,sum,i
+    int i=1,a=1,sum = 0;
+    //i will be our number and a will be the divisor
+    //loop to get each number from 1 to 1000
+    for(i=1;i<=1000;i++) 
+    {
+        //for that number(i) get mod of each number/divisor(a) less that number(i) and add it to sum  
+            for(a=1;a<= 1000;a++) 
+                {
+                    if (a < i) 
+                    {
+                        if (i % a == 0)
+                        sum = sum + a;
+                    }
+                }
+        // if sum and number is same than its perfect number 
+        if (sum == i)
+        {
+            cout << i << "  " << "\n";
+        }
+        //set sum again to 0;
+        sum = 0;
     }
-// foreach ($myArr as $key) {
-//     echo "Key: $key; Value: $value\n";
-// }
-//dispay myArr
-print_r($a3)
-?>
+    return 0;
+}
