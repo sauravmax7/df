@@ -1,0 +1,43 @@
+#class Movie
+class Movie:
+    #Using init function to assign values to Movie properties
+    def __init__(self, title, year, rating, directors):
+        self.title = title 
+        self.year = year 
+        self.rating = rating
+        self.directors = directors
+        #list of quotes
+        self.quotes = []
+    
+    #showMovie method to print movie details
+    def showMovie(self):
+        print("Title:"+self.title)
+        #using .format method to concat string with int
+        print("Release Year:{}".format(self.year))
+        print("Rating:{}".format(self.rating))
+        print("Directors:{}".format(self.directors))
+        print("Quotes:")
+        # using sep to print ;ist elements in new line 
+        print(*self.quotes, sep = "\n") 
+    
+    #addquotes method to add quotes to the movie    
+    def addquotes(self,quote):
+        #using append method of list to add quotes to list
+        #using .format to get given format to display quotes
+        self.quotes.append('*"{}"*'.format(quote))
+# declare library list
+library=[]
+# method to print each movie in library list 
+def printlibrary(library):
+    for i in library:
+        i.showMovie()
+        print('\n')
+        
+#create movie object
+m1=Movie("Monty Python and the Holy Grail",1975,"PG","Terry Gilliam and Tom Jones")
+#add movie m1 to library list
+library.append(m1)
+#add quotes
+m1.addquotes("its just a flesh wound!")
+#print library object
+printlibrary(library)
