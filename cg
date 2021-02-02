@@ -60,3 +60,26 @@ print(p_data)
 
 # json.dumps is used to serialize an object to a JSON formate
 print(json.dumps(p_data))
+
+
+
+
+
+
+% Use while to exectue code till we get positive x and y values 
+while 1
+    %promt user to enter value of x and y
+    x =input('Enter value for x: ');
+    y = input('Enter value for y: ');
+    %check if both the values are postive
+    if (x>0 && y>0)
+        %if postive break the while loop
+        break;
+    end
+end
+
+%display value of z 
+disp('Value of z is ');
+z=2*x^(2)-2*x*y;
+fprintf('z = %d\n', z);
+
