@@ -41,3 +41,22 @@ library.append(m1)
 m1.addquotes("its just a flesh wound!")
 #print library object
 printlibrary(library)
+
+
+
+
+#using json package
+import json
+# json data
+j_data='{"product_name":"iphone","available":true, "Ram": ["4GB","8GB"],"Charger":null}'
+
+# json.load is used to deserialize JSON to a Python object.
+p_data=json.loads(j_data)
+
+# we can now manipulate p_data 
+p_data["available"]=False
+#print changed data
+print(p_data)
+
+# json.dumps is used to serialize an object to a JSON formate
+print(json.dumps(p_data))
