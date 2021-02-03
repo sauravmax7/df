@@ -1,3 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function draw_line() {
+            // Canvas
+            //get canvas element 
+            var c = document.getElementById("canvas");
+            var ctx = c.getContext("2d");
+            // Draw lines
+            ctx.beginPath();
+            //use random function to get random value to draw line
+            ctx.moveTo(c.width * Math.random(), c.height * Math.random());
+            ctx.lineTo(c.width * Math.random(), c.height * Math.random());
+            //draw line
+            ctx.stroke();
+        };
+        function clear_screen() {
+            // Canvas
+            var c = document.getElementById("canvas");
+            var ctx = c.getContext("2d");
+            //use clearRect to clear the screen
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        };
+
+    </script>
+</head>
+
+<body>
+    <!--Draw button-->
+    <input type="button" value="Draw" onclick="draw_line()" />
+    <!--Clear button-->
+    <input type="button" value="Clear" onclick="clear_screen()" />
+    <div>
+        <!--Canvas element with 300*300 size-->
+        <canvas id="canvas" width="300" height="300"></canvas>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
 #class Movie
 class Movie:
     #Using init function to assign values to Movie properties
