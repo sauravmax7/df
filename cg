@@ -1,3 +1,99 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //termi variable to continue and terminate the while loop
+    bool termi=true;
+    while(termi)
+	{
+	    //prompt for user input
+		cout <<endl<<" - Press 1 For Lorry/Bus" << endl;
+		cout << " - Press 2 For Car/Van" << endl;
+		cout << " - Press 3 For MotorCycle" << endl;
+		cout << " - Press 4 to quit" << endl;
+    
+        //choice to store user input
+		int choice;
+		cin >> choice;
+		
+		//below line will execute only if choice is other than 4
+		float speed;
+		if(choice!=4){
+		cout<<"Enter Speed in Km/hour"<<endl;
+        cin>>speed;
+		}
+	    //switch case
+		switch(choice)
+		{
+            //depending upon the choice particular case will be executed
+			case 1:
+			{
+			    //for speed between 120 and 140
+				if(speed>120 and speed<=140)
+				{
+				    cout<<"Fees Charaged:"<<300<<endl;
+				}
+				//for speed >140
+				if(speed>140)
+				{
+				    cout<<"Fees Charaged:"<<400<<endl;
+				}
+			}
+			break;		
+			case 2:
+			{
+			    //for speed between 120 and 140
+				if(speed>120 and speed<=140)
+				{
+				    cout<<"Fees Charaged:"<<200<<endl;
+				}
+				//for speed >140
+				if(speed>140)
+				{
+				    cout<<"Fees Charaged:"<<300<<endl;
+				}
+			}
+			break;		
+			case 3:
+				//for speed >120
+				if(speed>120)
+				{
+				    cout<<"Fees Charaged:"<<150<<endl;
+				}
+				break;
+			break;
+			case 4:
+			//terminate the while loop by setting termi variable to false
+			    termi=false;
+				break;
+		}
+
+	}
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
