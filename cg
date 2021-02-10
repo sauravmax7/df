@@ -1,3 +1,59 @@
+
+#include <bits/stdc++.h> 
+using namespace std; 
+
+//function  
+void float_is_equal(float a, float b) 
+{ 
+  
+    //if the positive difference of the 2 no 
+    //is less than specified precision 
+    //we can consider it as samme
+    // floating-point numbers 
+    if (abs(a - b) < 1e4) { 
+        cout << "The numbers are equal "
+             << endl; 
+    }
+    //if its greater than specified precision
+    //the they are not same
+    else { 
+        cout << "The numbers are not equal "
+             << endl; 
+    } 
+} 
+  
+// Driver code 
+int main() 
+{ 
+    float a = 1.12005; 
+    float b = 1.12003;
+    //Above no will be equal for precision upto 4 decimal
+    float_is_equal(a, b); 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #include <iostream>
 
 using namespace std;
