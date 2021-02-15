@@ -1,3 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Flexible Grid</title>
+<style type="text/css">
+div
+{
+border: 1px solid blue;
+margin: 5px;
+}
+#container
+{
+width: 1000px;
+margin: auto;
+}
+#sidebar
+{
+width: 200px;
+float: left;
+}
+#main
+{
+margin-left: 220px;
+padding: 10px;
+}
+.product
+{
+float: left;
+width: 176px;
+height: 200px;
+border: 1px solid red;
+box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<div id="header">
+<img src="http://www.ksuowls.com/common/controls/image_handler.aspx?thumb_id=0&image_path=/images/2016/8/10/Header_42.png" />
+</div>
+<div id="sidebar">some content on the side here<p>.</p></div>
+<div id="main">
+<div class="product">some introductin of player 1 here.</div>
+<div class="product">Player n</div>
+<div class="product">Player n</div>
+<div class="product">Player n</div>
+<div class="product">Player n</div>
+<div class="product">Player n</div>
+<div class="product">Player n</div>
+<div class="product">Player n</div>
+<div style="clear: both; border: 0px;"></div>
+</div>
+</div>
+</body>
+</html>
+
+
 
 #include <iostream>
 using namespace std;
